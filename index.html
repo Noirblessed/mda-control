@@ -501,7 +501,7 @@ function drawerHTML(){
     '<button class="item" data-act="go" data-to="history">Historial'+I.chev+'</button>'+
     (isOwner()?'<button class="item" data-act="go" data-to="specials">Agregar fecha especial'+I.chev+'</button>':'')+
     '<button class="item" data-act="go" data-to="settings">Configuración'+I.chev+'</button>'+
-    '<div class="who" style="margin-top:auto;padding-top:18px">Sesión de '+esc(u.name)+(u.role==='guard'?' · Guardia':' · Dueño')+'</div>'+
+    '<div class="who" style="margin-top:auto;padding-top:18px">Sesión de '+esc(u.name)+(u.role==='guard'?' · Seguridad':(u.id==='jose'?' · Marketing':' · Dueño'))+'</div>'+
     '<button class="item out" data-act="logout">Cerrar sesión</button></aside>';
 }
 function backTop(label,to,extra){
